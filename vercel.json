@@ -1,0 +1,10 @@
+{
+   "version": 2,
+   "name": "send-email",
+   "builds": [
+      { "src": "app_contact.js", "use": "@vercel/node" }
+   ],
+   "routes": [
+      { "src": "/(.*)", "dest": "/app_contact.js" }
+   ]
+}
